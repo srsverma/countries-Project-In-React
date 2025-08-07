@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 
-import { Link, useLocation, useOutletContext, useParams } from 'react-router'
+import { Link, useLocation, useOutletContext, useParams } from 'react-router-dom'
 import CountryDetailShimmer from './CountryDetailShimmer'
 
 import { useTheme } from '../Hooks/useTheme'

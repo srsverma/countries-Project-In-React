@@ -1,6 +1,6 @@
 
 
-import { useContext, useEffect, useState } from "react"
+import { useState } from "react"
 import CountryContainer from "./CountryContainer"
 import SearchBar from "./SearchBar"
 import SelectMenu from "./SelectMenu"
