@@ -1,0 +1,304 @@
+*{
+    box-sizing: border-box;
+  
+}
+
+body{
+    margin: 0;
+    font-family: Nunito+Sans sans-serif;
+}
+main{
+    padding: 24px;
+    min-height: calc(100vh - 79px);
+}
+
+a{
+    text-decoration-line: none;
+    color: inherit;
+}
+
+.title{
+    font-weight: 700;
+}
+
+.header_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-inline: auto;
+    
+    
+}
+
+.header_container{
+    padding-inline: 24px;
+    position: sticky;
+    background-color: rgb(241, 238, 243);
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.countries-container{
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
+    gap: 70px;
+   
+    justify-content: space-between;
+    
+
+}
+.country_card{
+    display: inline-block;
+    /* background-color: white; */
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+    padding-bottom: 24px;
+    margin-top: 60px;
+    transition: all 0.2s ease-in-out;
+    
+}
+
+.country_card:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.country_card img{
+    width: 100%;
+    height: 50% ;
+    object-fit: cover;
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.2);
+    
+}
+.card_title{
+    font-size: 24px;
+    margin-block: 16px;
+}
+.card_text{
+    padding-inline: 16px;
+}
+.card_text p{
+   margin-block: 8px;
+}
+
+
+ .DarkMode{
+    background-color: rgb(88, 80, 80);
+    color: white;
+    font-size: 16px;
+    
+}
+.DarkMode .borderCountries a{
+   color: black;
+}
+.darkModeBtn{
+    cursor: pointer;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
+    padding: 8px 8px 8px 8px;
+    border-radius: 5px;
+    font-size: 20px;
+
+}
+
+
+
+
+
+
+
+.detalilsContainer{
+    max-width: 1000px;
+    margin-inline: auto;
+    margin-top: 46px;
+    
+}
+
+
+.carddetails{
+    display: flex;
+    flex-direction: row;
+    gap: 65px;
+    margin-top: 32px;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+   
+}
+.detailsCardTitle{
+    font-size: 32px;
+}
+
+.carddetails img{
+    width: 40%;
+    /* height: 100% ; */
+    object-fit: cover;
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.2);
+    
+    
+}
+.cardTextdetails{
+    margin-left: 20px;
+}
+
+
+.info{
+    display: flex;
+    gap: 55px;
+}
+
+
+.borderCountries{
+    margin-block: 10px;
+    font-size: 20px;
+}
+
+    .borderCountries a{
+        padding: 4px 20px;
+         background-color: rgb(240, 243, 227);
+        box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        font-size: 14px;
+        display: inline-block;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        
+        
+    }
+    .borderCountries a:hover{
+        box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.3);
+        background-color: aliceblue;
+    }
+
+    .back_button{
+        padding: 7px 17px;
+        box-shadow: 2px 5px 3px  rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    
+    }
+    .back_button:hover{
+        transition: all 0.2s ease-in-out;
+        box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.3);
+        background-color: aliceblue;
+        color: black;
+        
+    
+    }
+
+
+
+    .search_filter_container{
+        max-width: 1200px;
+        margin-inline: auto;
+        margin-top: 16px;
+        margin-bottom: 48px;
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+    }
+    .search_container{
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+        max-width: 350px;
+        width: 100%;
+        border-radius: 4px;
+        padding-left: 24px;
+        color: #999;
+        overflow: hidden;
+        background-color: white;
+        color: black;
+    }
+    .search_container input {
+        border: none;
+        outline: none;
+        padding: 16px;
+        width: 90%;
+        background-color: inherit;
+        color: inherit;
+    }
+
+    .search_container input::placeholder{
+        color: #999;
+    }
+
+    .filter-by-region{
+        width: 250px;
+        padding: 16px;
+        border: none;
+        outline: none;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        background-color: white;
+        color: black;
+
+    }
+
+
+
+    @media (max-width: 700px) {
+       
+        .country_card{
+            
+            width: 100%;
+            margin-inline: 50px;
+            
+            
+        }
+         .filter-by-region{
+            width: 1200px;
+            background-color: red;
+         }
+        
+
+        .detalilsContainer{margin-inline: 50px;}
+
+        .carddetails{
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+            margin-top: 32px;
+            
+        }
+
+        .carddetails img{
+            width: 100%;
+        }
+
+       .info{
+        flex-direction: column;
+        gap: 0px;
+
+       }
+
+       
+    .search_filter_container{
+        flex-direction: column;
+        align-items: center;
+    }
+    }
+    @media (max-width: 450px) {
+       
+        .title{
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .country_card{
+           
+            margin-top: 20px;
+           
+            
+        }
+        .darkModeBtn{
+            cursor: pointer;
+            box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
+            padding: 8px 8px 8px 8px;
+            border-radius: 5px;
+            font-size: 10px;
+        
+        }
+            
+    }

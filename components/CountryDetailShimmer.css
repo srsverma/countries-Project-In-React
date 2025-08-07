@@ -1,0 +1,117 @@
+
+
+
+
+
+
+
+
+.carddetailsShimmer img{
+    width: 400px;
+    height: 332px ;
+    background-color: #ccbcbc;
+   
+}
+
+.detailsCardTitleShimmer{
+    background-color: rgb(199, 181, 181);
+   width: 150px;
+    height: 25px;
+}
+
+.shimmer_info p{
+     background-color: rgb(199, 181, 181);
+   width: 200px;
+    height: 15px;
+}
+.shimmer_info p:last-child{
+     width: 100px;
+}
+
+.borderCountriesheadingShimmer{
+    background-color: rgb(199, 181, 181);
+   width: 150px;
+    height: 20px;
+}
+
+.borderCountries_Shimmer a{
+    background-color:  rgb(199, 181, 181) !important; 
+     width:25px;
+    height: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+    .borderCountries a{
+        padding: 4px 20px;
+        background-color: rgb(199, 181, 181);;
+    
+    }
+    
+
+    
+    
+   
+
+     @media (max-width: 700px) {
+       
+       .carddetailsShimmer img{
+    width: 584px;
+    height: 293px ;
+    background-color: #ccbcbc;
+}
+        
+
+        .detalilsContainer{margin-inline: 50px;}
+
+        .carddetails{
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+            margin-top: 32px;
+            
+        }
+
+        .carddetails img{
+            width: 100%;
+        }
+
+       .info{
+        flex-direction: column;
+        gap: 0px;
+
+       }
+
+       .filter-by-region{
+        width: 130px;
+        padding: 8px;
+        border: none;
+        outline: none;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        background-color: white;
+        color: black;
+    }
+    .search_filter_container{
+        flex-direction: column;
+        align-items: center;
+    }
+    }
+
+    
+    @media (max-width: 450px) {
+       
+         .carddetailsShimmer img{
+    width: 334px;
+    height: 168px ;
+    background-color: #ccbcbc;
+}
+     
+    }
